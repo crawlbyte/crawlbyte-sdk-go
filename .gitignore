@@ -1,0 +1,17 @@
+# Go
+/bin/
+/build/
+/dist/
+*.exe
+*.test
+*.out
+
+# Module cache
+vendor/
+go.sum
+
+# IDE/editor stuff
+.idea/
+.vscode/
+.DS_Store
+.env
