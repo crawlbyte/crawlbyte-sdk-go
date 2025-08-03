@@ -105,8 +105,8 @@ The SDK returns detailed error messages for HTTP errors and API failures:
 ```go
 task, err := sdk.CreateTask(payload)
 if err != nil {
-fmt.Printf("Error creating task: %v\n", err)
-return
+    fmt.Printf("Error creating task: %v\n", err)
+    return
 }
 ```
 
@@ -116,12 +116,12 @@ return
 
 ```go
 task, err := sdk.CreateTask(crawlbyte.TaskPayload{
-Template: "universal",
-Input: []string{
-"https://example1.com",
-"https://example2.com",
-},
-JSRendering: true,
+    Template: "universal",
+    Input: []string{
+        "https://example1.com",
+        "https://example2.com",
+    },
+    JSRendering: true,
 })
 ```
 
